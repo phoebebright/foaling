@@ -1,0 +1,111 @@
+.highlightRainRes, .highlight {
+    font-family: BrandonLight, sans-serif;
+    font-size: 1.4em;
+    line-height: 1.6em;
+    font-weight: normal;
+    color: #56350c;
+}
+
+.legend {
+    font-family: BrandonBold, sans-serif;
+    font-size: 1.4em;
+    line-height: 1.6em;
+    font-weight: normal;
+    margin-bottom: 0.5em;
+}
+
+#legendTitle {
+    font-family: BrandonLight, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+
+path, .line {
+    fill: none;
+    clip-path: url(#clip);
+}
+
+
+.panel {
+    fill: #fff;
+    opacity: 0.8;
+}
+
+#Nebo1D, .highlight circle.highlight1d {
+    stroke-width: 1;
+    stroke: #009390;
+}
+
+text.highlight1d, #legend-Nebo1D {
+    fill: #009390;
+}
+
+#Nebo1S, .highlight circle.highlight1s, #rain, .highlightRainRes circle.highlightRain {
+    stroke-width: 1;
+    stroke: #619dd4;
+}
+
+text.highlight1s, #legend-Nebo1S, text.highlightRain {
+    fill: #619dd4;
+}
+
+#Nebo2D, .highlight circle.highlight2d, #residual, .highlightRainRes circle.highlightRes {
+    stroke-width: 1;
+    stroke: #132d46;
+}
+
+text.highlight2d, #legend-Nebo2D, text.highlightRes {
+    fill: #132d46;
+}
+
+#Nebo2S, .highlight circle.highlight2s {
+    stroke-width: 1;
+    stroke: #aaa813;
+}
+
+text.highlight2s, #legend-Nebo2S {
+    fill: #aaa813;
+}
+
+#Nebo3, .highlight circle.highlight3 {
+    stroke-width: 1;
+    stroke: #8dc63f;
+}
+
+text.highlight3, #legend-Nebo3 {
+    fill: #8dc63f;
+}
+
+.brush .extent {
+    stroke: #fff;
+    fill-opacity: .125;
+    shape-rendering: crispEdges;
+}
+
+.overlay {
+    fill: none;
+    pointer-events: all;
+}
+
+.highlight circle, .highlightRainRes circle {
+    fill: none;
+}
+
+.highlight line {
+    stroke: purple;
+    shape-rendering: crispEdges;
+}
+
+.highlight line.Nebo1d {
+    stroke: steelblue;
+    stroke-dasharray: 3 3;
+    opacity: .5;
+}
+
+.highlight line.Nebo1s {
+    stroke: indianred;
+    stroke-dasharray: 3 3;
+    opacity: .5;
+}
+
+

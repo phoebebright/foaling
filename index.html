@@ -1,0 +1,141 @@
+<head>
+    <link href="http://vjs.zencdn.net/5.10.2/video-js.css" rel="stylesheet">
+
+    <!-- If you'd like to support IE8 -->
+    <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">    <link rel="stylesheet" href="styles.css" >
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <script src="http://d3js.org/d3.v3.js"></script>
+    <script src="tooltip.js"></script>
+
+</head>
+
+<body>
+
+
+    <div class="navbar-collapse collapse inverse" id="navbar-header">
+        <div class="container-fluid">
+            <div class="about">
+                <h4>About</h4>
+                <p class="text-muted">Some infor here</p>
+            </div>
+            <div class="social">
+                <h4>Contact</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#">Follow on Twitter</a></li>
+                    <li><a href="#">Like on Facebook</a></li>
+                    <li><a href="#">Email me</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-static-top navbar-dark bg-inverse">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header">
+                &#9776;
+            </button>
+            <a href="#" class="navbar-brand">Horse Monitoring System</a>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+
+    <div class="row">
+        <div class="col-md-6">
+
+            <div class="card">
+
+                <video id="review-video" class="video-js" controls preload="auto" width="640" height="264"
+                       poster="poster.jpg" data-setup="{}">
+                    <source src="./video1.mp4" type='video/mp4'>
+                    <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider upgrading to a web browser that
+                        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                    </p>
+                </video>
+
+                    <div class="card-block">
+                    <h4 class="card-title">Review</h4>
+<div id="video_time"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+
+            <div class="card">
+
+                <video id="live-video" class="video-js"  preload="auto" width="640" height="264"
+                       poster="poster.jpg" data-setup="{}">
+                    <source src="./video2.mp4" type='video/mp4'>
+                    <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider upgrading to a web browser that
+                        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                    </p>
+                </video>
+
+                <div class="card-block">
+                    <h4 class="card-title">Live</h4>
+
+                </div>
+            </div>
+
+        </div>
+</div>
+    <div class="row">
+        <div class="col-md-8">
+            <svg id="chart"></svg>
+
+        </div>
+    <div class="col-md-4">
+        <button type="button" class="btn btn-primary btn-lg btn-block">Set an Alarm</button>
+        <button type="button" class="btn btn-secondary btn-lg btn-block">Do other stuff</button>
+    </div>
+</div>
+    </div>
+
+
+
+
+<script src="http://vjs.zencdn.net/5.10.2/video.js"></script>
+<script src="./chart.js"></script>
+
+<h3>Todo</h3>
+<ul>
+    <li>Bootstrap</li>
+    <li>auto play with webcam</li>
+    <li>show chart</li>
+    <li>controls</li>
+    <li>show saved video in another window</li>
+    <li>on click chart go to position in saved video </li>
+    <li>Leapmotion!</li>
+</ul>
+<!--<video id="example_video_1" class="video-js vjs-default-skin"-->
+       <!--controls preload="auto" width="640" height="264"-->
+       <!--poster="http://video-js.zencoder.com/oceans-clip.png"-->
+       <!--data-setup='{"example_option":true}'>-->
+    <!--<source src="http://video-js.zencoder.com/oceans-clip.mp4" type="video/mp4" />-->
+
+    <!--<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>-->
+<!--</video>-->
+</body>
+<script>
+
+    videojs("review-video").ready(function(){
+
+        var player = this;
+
+//        $("#video_time")
+        player.playbackRate(2);
+
+    });
+
+
+
+
+</script>
+</body>
